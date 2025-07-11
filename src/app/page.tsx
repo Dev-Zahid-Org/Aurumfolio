@@ -33,7 +33,7 @@ export default function Home() {
             className="mx-auto max-w-3xl space-y-6"
           >
             <MotionDiv variants={variants}>
-              <h1 className="text-4xl font-bold tracking-tighter text-primary sm:text-6xl md:text-7xl lg:text-8xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
+              <h1 className="text-5xl font-bold tracking-tighter text-primary sm:text-6xl md:text-7xl lg:text-8xl md:bg-clip-text md:text-transparent md:bg-gradient-to-r md:from-primary md:to-accent">
                 Dev-Zahid
               </h1>
             </MotionDiv>
