@@ -19,7 +19,7 @@ export const projects: Project[] = [
   {
     title: "E-commerce Platform",
     slug: "ecommerce-platform",
-    shortDescription: "A fully-featured online store with a modern design.",
+    shortDescription: "A fully-featured online store with a modern design and seamless user experience.",
     longDescription:
       "This project is a comprehensive e-commerce solution built from the ground up. It features a product catalog, user authentication, a shopping cart, and a secure checkout process. The backend is powered by Node.js and the frontend is built with React and Next.js for optimal performance and SEO. The design is fully responsive, ensuring a seamless experience across all devices.",
     technologies: ["Next.js", "React", "TypeScript", "Node.js", "Stripe", "PostgreSQL"],
@@ -33,10 +33,10 @@ export const projects: Project[] = [
   {
     title: "Project Management Tool",
     slug: "project-management-tool",
-    shortDescription: "A collaborative tool to manage tasks and projects.",
+    shortDescription: "A collaborative tool to manage tasks and projects with real-time updates.",
     longDescription:
       "A web application designed to help teams organize their work. It includes features like task creation, assignment, status tracking, and project timelines. Real-time updates are handled using WebSockets, and the interface is designed to be intuitive and user-friendly. The application also supports file attachments and commenting on tasks.",
-    technologies: ["React", "Firebase", "Redux", "Figma", "Material UI"],
+    technologies: ["React", "Firebase", "Redux", "Framer Motion", "Tailwind CSS"],
     coverImage: "https://placehold.co/600x400.png",
     images: [
       "https://placehold.co/1200x800.png",
@@ -44,12 +44,12 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: "Portfolio Website",
+    title: "This Portfolio Website",
     slug: "portfolio-website",
-    shortDescription: "A personal portfolio to showcase my work and skills.",
+    shortDescription: "A personal portfolio to showcase my work and skills, built with the latest tech.",
     longDescription:
-      "This very website is a project in itself. Built with Next.js and styled with Tailwind CSS, it's designed to be a fast, modern, and visually appealing representation of my professional identity. It features a dark theme with gold accents for a premium feel and is fully responsive. The code is open-source and available on my GitHub.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/UI", "Vercel"],
+      "This very website is a project in itself. Built with Next.js and styled with Tailwind CSS, it's designed to be a fast, modern, and visually appealing representation of my professional identity. It features a vibrant dark theme and is fully responsive. The code is open-source and available on my GitHub.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/UI", "Framer Motion"],
     coverImage: "https://placehold.co/600x400.png",
     images: [
       "https://placehold.co/1200x800.png",
@@ -58,7 +58,7 @@ export const projects: Project[] = [
   {
     title: "Data Visualization Dashboard",
     slug: "data-visualization-dashboard",
-    shortDescription: "An interactive dashboard for visualizing complex data sets.",
+    shortDescription: "An interactive dashboard for visualizing complex data sets with dynamic charts.",
     longDescription:
       "A powerful tool for data analysis, this dashboard allows users to upload datasets and generate various types of charts and graphs. It's built with D3.js for custom visualizations and React for a dynamic user interface. The backend processes large datasets efficiently, and users can save and share their dashboards.",
     technologies: ["React", "D3.js", "Python", "Flask", "Pandas"],
@@ -77,13 +77,13 @@ export const skills = {
     "TypeScript",
     "React & Next.js",
     "Tailwind CSS",
-    "Figma",
+    "Framer Motion",
   ],
   "Backend": [
     "Node.js & Express",
     "Python & Django",
     "SQL (PostgreSQL)",
-    "NoSQL (MongoDB, Firebase)",
+    "NoSQL (Firebase)",
     "REST & GraphQL APIs",
     "Authentication (OAuth, JWT)",
   ],
@@ -92,7 +92,7 @@ export const skills = {
     "Docker",
     "Vercel & Netlify",
     "Google Cloud Platform",
-    "Stripe API",
+    "Figma",
     "Agile Methodologies",
   ],
 };
