@@ -4,8 +4,8 @@ import { ProjectCard } from "@/components/project-card";
 import { projects, skills } from "@/lib/data";
 import { ArrowRight, Briefcase, Mail, Code, Star, Check } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import { MotionDiv } from "@/components/motion-div";
+import { InteractiveBackground } from "@/components/interactive-background";
 
 export default function Home() {
   const featuredProjects = projects.slice(0, 3);
@@ -17,8 +17,9 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center">
-      <section id="hero" className="w-full py-20 md:py-32 bg-background">
-        <div className="container mx-auto px-4 md:px-6 text-center">
+      <section id="hero" className="w-full relative py-20 md:py-32 bg-background overflow-hidden">
+        <InteractiveBackground />
+        <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
           <MotionDiv
             initial="hidden"
             animate="visible"
@@ -33,7 +34,7 @@ export default function Home() {
           >
             <MotionDiv variants={variants}>
               <h1 className="text-5xl font-bold tracking-tighter text-primary sm:text-6xl md:text-7xl lg:text-8xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-                Aurumfolio
+                Dev-Zahid
               </h1>
             </MotionDiv>
             <MotionDiv variants={variants}>
