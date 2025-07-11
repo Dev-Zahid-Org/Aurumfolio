@@ -24,7 +24,7 @@ export function InteractiveBackground() {
     () => ({
       background: {
         color: {
-          value: "hsl(240 15% 10%)", // A darker background to make particles pop
+          value: "hsl(224 71.4% 4.1%)",
         },
       },
       fpsLimit: 60,
@@ -41,17 +41,17 @@ export function InteractiveBackground() {
             distance: 140,
             links: {
               opacity: 1,
-              color: "#9929EA"
+              color: "hsl(var(--primary))"
             },
           },
         },
       },
       particles: {
         color: {
-          value: "#4A9782",
+          value: "hsl(var(--accent))",
         },
         links: {
-          color: "#004030",
+          color: "hsl(var(--primary))",
           distance: 150,
           enable: true,
           opacity: 0.4,
