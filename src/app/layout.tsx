@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { Toaster } from "@/components/ui/toaster";
-import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: 'Aurumfolio - Professional Portfolio',
@@ -34,7 +33,6 @@ export default function RootLayout({
           <Footer />
         </div>
         <Toaster />
-        <Analytics />
       </body>
     </html>
   );

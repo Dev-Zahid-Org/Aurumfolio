@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ProjectCard } from "@/components/project-card";
 import { projects, skills } from "@/lib/data";
-import { ArrowRight, Briefcase, Mail, Code, Star } from "lucide-react";
+import { ArrowRight, Briefcase, Mail, Code, Star, Check } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { MotionDiv } from "@/components/motion-div";
