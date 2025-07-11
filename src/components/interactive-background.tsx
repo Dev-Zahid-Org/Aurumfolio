@@ -1,10 +1,9 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import Particles from "react-tsparticles";
-import { initParticlesEngine } from "@tsparticles/engine";
-import type { Container, ISourceOptions } from "@tsparticles/engine";
+import Particles, { initParticlesEngine } from "react-tsparticles";
 import { loadSlim } from "@tsparticles/slim";
+import type { Container, ISourceOptions } from "@tsparticles/engine";
 
 export function InteractiveBackground() {
   const [init, setInit] = useState(false);
@@ -25,7 +24,7 @@ export function InteractiveBackground() {
     () => ({
       background: {
         color: {
-          value: "hsl(224 71.4% 4.1%)",
+          value: "hsl(240 15% 10%)", // A darker background to make particles pop
         },
       },
       fpsLimit: 60,
@@ -42,19 +41,20 @@ export function InteractiveBackground() {
             distance: 140,
             links: {
               opacity: 1,
+              color: "#9929EA"
             },
           },
         },
       },
       particles: {
         color: {
-          value: "#ffffff",
+          value: "#4A9782",
         },
         links: {
-          color: "#ffffff",
+          color: "#004030",
           distance: 150,
           enable: true,
-          opacity: 0.2,
+          opacity: 0.4,
           width: 1,
         },
         move: {
@@ -70,11 +70,12 @@ export function InteractiveBackground() {
         number: {
           density: {
             enable: true,
+            area: 800
           },
           value: 80,
         },
         opacity: {
-          value: 0.2,
+          value: 0.5,
         },
         shape: {
           type: "circle",
