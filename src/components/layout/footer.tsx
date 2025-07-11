@@ -15,7 +15,7 @@ export function Footer() {
         </div>
         <div className="flex items-center gap-2">
            <Button variant="ghost" size="icon" asChild>
-            <Link href="https://github.com" target="_blank">
+            <Link href="https://github.com/Dev-Zahid-Org" target="_blank">
                 <Github className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
                 <span className="sr-only">GitHub</span>
             </Link>
