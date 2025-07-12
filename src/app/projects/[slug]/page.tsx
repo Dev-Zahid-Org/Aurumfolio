@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import { projects } from "@/lib/data";
-import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
@@ -46,7 +45,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           <CarouselContent>
             {project.images.map((img, index) => (
               <CarouselItem key={index}>
-                <Image
+                <img
                   src={img}
                   alt={`${project.title} screenshot ${index + 1}`}
                   width={1200}

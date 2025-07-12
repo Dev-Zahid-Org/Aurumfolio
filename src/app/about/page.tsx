@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { experience } from "@/lib/data";
 import { Briefcase, Check } from "lucide-react";
 import { MotionDiv } from "@/components/motion-div";
@@ -24,7 +23,7 @@ export default function AboutPage() {
         className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center mb-16"
       >
         <MotionDiv variants={variants} className="md:col-span-1">
-          <Image
+          <img
             src="https://placehold.co/400x400.png"
             alt="My Portrait"
             width={400}

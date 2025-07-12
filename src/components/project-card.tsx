@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -19,7 +18,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
     >
       <Card className="flex flex-col overflow-hidden bg-secondary/30 border-border hover:border-primary/50 transition-all duration-300 ease-in-out h-full">
         <Link href={`/projects/${project.slug}`} className="block overflow-hidden">
-          <Image
+          <img
             src={project.coverImage}
             alt={project.title}
             width={600}
